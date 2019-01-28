@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
+    <title>Error 404</title>
+    <style>
+        body {
+            background-color: #0C2340;
+            width: 100%;
+            min-width: 1337px;
+        }
+        .Oeil {
+            width: 200px;
+            height: 200px;
+            background: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) rotate(45deg);
+            border-radius : 75% 0;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .Retine {
+            width: 40px;
+            height: 80px;
+            background: black;
+            border-radius: 50%;
+            border: 30px solid #981B47;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) rotate(-45deg);
+            transition: 0.4s all;
+        }
+        .Clignement {
+            width: 320px;
+            height: 160px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) rotate(-45deg);
+            z-index: 999;
+            }
+        .Clignement span {
+            display: block;
+            width: 100%;                
+            height: 19%;
+            background: #F4D9BC;
+            border-radius: 0 0 55% 55%;
+            transition: 0.4s all;
+            }
+        .Oeil:hover > .Clignement span {
+            height: 100%;
+        }
+        .Error404{
+            font-family: 'Oswald', sans-serif;
+        }
+        .Error {
+            color: #981B47;
+            font-size: 200px;
+            position: absolute;
+            top: 8%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        .PageNotFound {
+            color: #9EA2A2;
+            font-size: 80px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        .Message{
+            color: #9EA2A2;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 50px;
+            position: absolute;
+            top: 59%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        .RienAVoir {
+            color: #9EA2A2;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 50px;
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        .Retour {
+            background-color: #9EA2A2;
+            color: #981B47;
+            font-family: 'Oswald', sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            width: 270px;
+            height: 65px;
+            border: solid;
+            border-color: black;
+            border-radius: 40px;
+            border-width: 3px;
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: block;
+            margin: auto;
+            text-align: center;
+            text-decoration: none;
+        }
+        .TextBouton {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        a:hover {
+            border-color: #9EA2A2;
+            background-color: #FFFFFF;
+        }
+        a:hover > .TextBouton{
+            border-color: #9EA2A2;
+            background-color: #FFFFFF;
+            color: #236192;
+        }
+    </style>
+</head>
+<body>
+    <div class="Ensemble">
+        <div class="Oeil">
+            <div class="Retine"></div>
+            <div class="Clignement">
+                <span></span>
+        </div>
+            </div>
+        <div class="Error404">
+            <div class="Error">404</div>
+            <div class="PageNotFound">Page not found</div>
+        </div>
+        <div class="Jerrome">
+            <div class="Message">What are you doing here?</div>
+            <div class="RienAVoir">You shouldn't be there...</div>
+        </div>
+        <div class="Bouton">
+                <a href="https://github.com/AmauryD19" title="Retour" class="Retour"><div class="TextBouton">GO AWAY</div></a>
+        </div>
+    </div>
+</body>
+</html>
